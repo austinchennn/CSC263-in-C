@@ -8,41 +8,46 @@ C implementations of the data structures and algorithms covered in **CSC263H1: D
 
 ## Topics
 
-Based on the course's lecture notes, organized by chapter. Checked items have an implementation in this repo.
+Based on the course's lecture notes, organized by week (Weeks 0-11). Checked items have an implementation in this repo.
 
-1. [x] Complexity
+- [ ] Week 0 — Orientation
+   - Course syllabus, no lecture topic
+1. [x] Week 1 — Complexity
    - Asymptotic notation, worst-case vs. average-case analysis
-2. [x] Priority Queues and Heaps
+2. [x] Week 2 — Priority Queues and Heaps
    - Binary heap (array-based), heap sort
-3. [ ] Dictionaries and Binary Search Trees
+3. [ ] Week 3 — Dictionaries and Binary Search Trees
    - BST insert/search/delete, successor
-4. [ ] AVL Trees and Augmented Data Structures
+4. [ ] Week 4 — AVL Trees and Augmented Data Structures
    - Rotations, balance factor
-5. [ ] Hash Tables
+5. [ ] Week 5 — Hash Tables
    - Chaining, open addressing (linear/quadratic/double hashing)
-6. [ ] Amortized Analysis
+6. [ ] Week 6 — Amortized Analysis
    - Dynamic arrays, aggregate/accounting methods
-7. [ ] Disjoint Sets
+7. [ ] Week 7 — Disjoint Sets
    - Union-by-rank, path compression
-8. [ ] Graphs and BFS
+8. [ ] Week 8 — Graphs and BFS
    - Adjacency list/matrix, shortest paths
-9. [ ] DFS
+9. [ ] Week 9 — DFS
    - Topological sort, strongly connected components
-10. [ ] Minimum Spanning Trees
+10. [ ] Week 10 — Minimum Spanning Trees
     - Kruskal's, Prim's
-11. [ ] Randomized Quick Sort
+11. [ ] Week 11 — Randomized Quick Sort
 
 ## Structure
 
 ```
-1_PriorityQueue/
-  1.2_Binary Heap Implementation/
-    pq.h      # priority queue interface
-    pq.c      # binary heap implementation
-    main.c    # usage / manual tests
+WEEK2 Priority Queues and Heaps/
+  1_PriorityQueue/
+    1.2_Binary Heap Implementation/
+      pq.h      # priority queue interface
+      pq.c      # binary heap implementation
+      main.c    # usage / manual tests
+  2_Heap Sort/
+    heapsort.c  # in-place heap sort
 ```
 
-Each topic gets its own numbered top-level folder as it's implemented.
+Each week gets its own `WEEKn ...` top-level folder as it's implemented, with subfolders for each topic/subtopic within that week.
 
 ## Building
 
