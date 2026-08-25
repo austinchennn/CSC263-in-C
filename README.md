@@ -66,10 +66,10 @@ clang -g main.c pq.c -o pq_demo
 
 </details>
 
-<a id="chinese"></a>
-
 <details>
 <summary><b>中文</b></summary>
+
+<a id="chinese"></a>
 
 ## 课程主题
 
