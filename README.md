@@ -10,17 +10,27 @@ C implementations of the data structures and algorithms covered in **CSC263H1: D
 
 Based on the course's lecture notes, organized by chapter. Checked items have an implementation in this repo.
 
-- [x] Complexity — asymptotic notation, worst-case vs. average-case analysis
-- [x] Priority Queues and Heaps — binary heap (array-based), heap sort
-- [ ] Dictionaries and Binary Search Trees — BST insert/search/delete, successor
-- [ ] AVL Trees and Augmented Data Structures — rotations, balance factor
-- [ ] Hash Tables — chaining, open addressing (linear/quadratic/double hashing)
-- [ ] Amortized Analysis — dynamic arrays, aggregate/accounting methods
-- [ ] Disjoint Sets — union-by-rank, path compression
-- [ ] Graphs and BFS — adjacency list/matrix, shortest paths
-- [ ] DFS — topological sort, strongly connected components
-- [ ] Minimum Spanning Trees — Kruskal's, Prim's
-- [ ] Randomized Quick Sort
+1. [x] Complexity
+   - Asymptotic notation, worst-case vs. average-case analysis
+2. [x] Priority Queues and Heaps
+   - Binary heap (array-based), heap sort
+3. [ ] Dictionaries and Binary Search Trees
+   - BST insert/search/delete, successor
+4. [ ] AVL Trees and Augmented Data Structures
+   - Rotations, balance factor
+5. [ ] Hash Tables
+   - Chaining, open addressing (linear/quadratic/double hashing)
+6. [ ] Amortized Analysis
+   - Dynamic arrays, aggregate/accounting methods
+7. [ ] Disjoint Sets
+   - Union-by-rank, path compression
+8. [ ] Graphs and BFS
+   - Adjacency list/matrix, shortest paths
+9. [ ] DFS
+   - Topological sort, strongly connected components
+10. [ ] Minimum Spanning Trees
+    - Kruskal's, Prim's
+11. [ ] Randomized Quick Sort
 
 ## Structure
 
