@@ -15,10 +15,8 @@ C implementations of the data structures and algorithms covered in **CSC263H1: D
 
 ## Topics
 
-Based on the course's lecture notes, organized by week (Weeks 0-11). Checked items have an implementation in this repo.
+Based on the course's lecture notes, organized by week (Weeks 1-11). Checked items have an implementation in this repo.
 
-- [ ] Week 0 — Orientation
-   - Course syllabus, no lecture topic
 1. [x] Week 1 — Complexity
    - Asymptotic notation, worst-case vs. average-case analysis
 2. [x] Week 2 — Priority Queues and Heaps
@@ -80,10 +78,8 @@ clang -g main.c pq.c -o pq_demo
 
 ## 课程主题
 
-依据课程讲义按周整理（第 0-11 周）。已勾选的条目在本仓库中已有对应实现。
+依据课程讲义按周整理（第 1-11 周）。已勾选的条目在本仓库中已有对应实现。
 
-- [ ] 第 0 周 — 课程说明
-   - 教学大纲介绍，无对应讲义主题
 1. [x] 第 1 周 — 复杂度分析
    - 渐进符号、最坏情况与平均情况分析
 2. [x] 第 2 周 — 优先队列与堆
