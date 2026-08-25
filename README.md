@@ -11,7 +11,7 @@
 C implementations of the data structures and algorithms covered in **CSC263H1: Data Structures and Analysis** (University of Toronto).
 
 <details open>
-<summary><b>🇬🇧 English</b></summary>
+<summary><b>English</b></summary>
 
 ## Topics
 
@@ -39,21 +39,6 @@ Based on the course's lecture notes, organized by week (Weeks 1-11). Checked ite
     - Kruskal's, Prim's
 11. [ ] Week 11 — Randomized Quick Sort
 
-## Structure
-
-```
-WEEK2 Priority Queues and Heaps/
-  1_PriorityQueue/
-    1.2_Binary Heap Implementation/
-      pq.h      # priority queue interface
-      pq.c      # binary heap implementation
-      main.c    # usage / manual tests
-  2_Heap Sort/
-    heapsort.c  # in-place heap sort
-```
-
-Each week gets its own `WEEKn ...` top-level folder as it's implemented, with subfolders for each topic/subtopic within that week.
-
 ## Building
 
 Each implementation is a standalone C project. From within a topic's folder:
@@ -74,7 +59,7 @@ clang -g main.c pq.c -o pq_demo
 <a id="chinese"></a>
 
 <details>
-<summary><b>🇨🇳 中文</b></summary>
+<summary><b>中文</b></summary>
 
 ## 课程主题
 
@@ -101,21 +86,6 @@ clang -g main.c pq.c -o pq_demo
 10. [ ] 第 10 周 — 最小生成树
     - Kruskal 算法、Prim 算法
 11. [ ] 第 11 周 — 随机化快速排序
-
-## 目录结构
-
-```
-WEEK2 Priority Queues and Heaps/
-  1_PriorityQueue/
-    1.2_Binary Heap Implementation/
-      pq.h      # 优先队列接口
-      pq.c      # 二叉堆实现
-      main.c    # 用法示例 / 手动测试
-  2_Heap Sort/
-    heapsort.c  # 原地堆排序
-```
-
-每一周的内容都会有独立的 `WEEKn ...` 顶层文件夹（随实现进度逐步添加），每周文件夹内再按主题 / 子主题划分子文件夹。
 
 ## 编译运行
 
