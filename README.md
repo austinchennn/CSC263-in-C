@@ -30,8 +30,9 @@ Based on the course's lecture notes, organized by week (Weeks 1-11). Checked ite
    - Rotations
    - Balance factor
 5. [ ] Week 5 — Hash Tables
-   - Chaining
-   - Open addressing (linear/quadratic/double hashing)
+   - Hash functions (division/multiplication method)
+   - Collision solving: chaining
+   - Collision solving: open addressing (linear/quadratic/double hashing)
 6. [ ] Week 6 — Amortized Analysis
    - Dynamic arrays
    - Aggregate/accounting methods
