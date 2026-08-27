@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logo.png" alt="CSC263-in-C logo — a binary search tree" width="480">
+  <img src="assets/logo.png" alt="CSC263-in-C logo — a graph" width="480">
 </p>
 
 <h1 align="center">CSC263-in-C</h1>
