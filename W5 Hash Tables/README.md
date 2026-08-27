@@ -5,6 +5,17 @@
 ### Universe（全集）
 
 - Universe U：所有可能出现的 key 组成的集合
+- 实际存储的 key 集合 K ⊆ U，通常 |K| 远小于 |U|
+
+### Direct-Address Table（直接定址表）——引入 collision 的铺垫
+
+- 前提：key 取自一个较小的全集 U = {0, 1, ..., m − 1}，且没有两个元素的 key 相同
+- 做法：直接用一个长度为 |U| 的数组 T 当字典，key 为 k 的元素就存在 T[k]——相当于哈希函数取恒等映射 h(k) = k
+- Search / Insert / Delete 都是 Θ(1)（直接按下标访问，不会发生 collision）
+- 局限：
+  - 若 |U| 非常大，长度为 |U| 的数组无法在内存中放下
+  - 若实际出现的 key 集合 K 远小于 U，数组绝大多数 slot 都被浪费
+- Hash Table 就是对 Direct-Address Table 的改进：改用一个长度 m ≈ |K| 的数组，配合哈希函数 h 把 key 从 U「压缩」到 {0, ..., m − 1}；代价是当 m < |U| 时不同 key 可能落到同一 slot，即 collision
 
 ### Hash Function（哈希函数）
 
@@ -23,6 +34,9 @@
 - 实际情况中，可能出现的 key 的数量通常远大于数组的 slot 数量
 - 若 m < |U|，则至少会发生一次 collision（碰撞）
 
-## Chaining（链式法）— 定义
+### 目录
 
-- Chaining 是解决 collision 的一种方式：数组中每个 bucket 都指向一个存储 key-value 对的链表（linked list）
+| 子主题 | 内容 |
+|---|---|
+| [1_Hash Function](1_Hash%20Function/) | 如何设计哈希函数 h（Division Method / Multiplication Method） |
+| [2_Collision Solving](2_Collision%20Solving/) | 碰撞发生后怎么处理（Chaining / Open Addressing） |
