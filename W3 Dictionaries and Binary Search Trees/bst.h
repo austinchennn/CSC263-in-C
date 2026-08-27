@@ -15,6 +15,7 @@ BSTNode* Search(BSTNode* root, int x);
 void Insert(BSTNode **root, int x);
 BSTNode* Create(int a[], int n);
 void Delete(BSTNode **root, int x);
+bool isBST(BSTNode* root);
 
 
 
