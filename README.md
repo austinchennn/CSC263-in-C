@@ -39,10 +39,10 @@ Based on the course's lecture notes, organized by week (Weeks 1-11). Checked ite
 7. [ ] Week 7 — Disjoint Sets
    - Union-by-rank
    - Path compression
-8. [ ] Week 8 — Graphs and BFS
+8. [x] Week 8 — Graphs and BFS
    - Adjacency list/matrix
    - Shortest paths
-9. [ ] Week 9 — DFS
+9. [x] Week 9 — DFS
    - Topological sort
    - Strongly connected components
 10. [ ] Week 10 — Minimum Spanning Trees
@@ -97,10 +97,10 @@ clang -g main.c pq.c -o pq_demo
 7. [ ] 第 7 周 — 并查集
    - 按秩合并
    - 路径压缩
-8. [ ] 第 8 周 — 图与广度优先搜索（BFS）
+8. [x] 第 8 周 — 图与广度优先搜索（BFS）
    - 邻接表 / 邻接矩阵
    - 最短路径
-9. [ ] 第 9 周 — 深度优先搜索（DFS）
+9. [x] 第 9 周 — 深度优先搜索（DFS）
    - 拓扑排序
    - 强连通分量
 10. [ ] 第 10 周 — 最小生成树
