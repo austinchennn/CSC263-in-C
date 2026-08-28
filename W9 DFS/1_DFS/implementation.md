@@ -35,3 +35,10 @@
 - 最坏情况运行时间：Θ(n + m)
   - 用 adjacency list 时：访问每个顶点、为其赋值的部分总计 Θ(n)；检查每个顶点的所有邻居，每条边最多被检查两次，总计 Θ(m)
   - NOTE：若用 adjacency matrix，最坏情况运行时间为 Θ(n²)
+
+### 配套代码
+
+- [../graph.h](../graph.h) / [../graph.c](../graph.c)：邻接表 + `transposeGraph`（SCC 用）
+- [../dfs.h](../dfs.h) / [../dfs.c](../dfs.c)：`dfsRun()` 递归实现 DFS(G) / DFSVisit，回填 `d[]` / `f[]` / `pred[]`
+- 环检测 / 拓扑排序 / SCC 分别在 [../cycle.c](../cycle.c) / [../toposort.c](../toposort.c) / [../scc.c](../scc.c)
+- 编译：`cc graph.c dfs.c cycle.c toposort.c scc.c main.c -o demo`

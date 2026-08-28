@@ -12,3 +12,7 @@
   ```
 - 最坏情况运行时间：Θ(n + m)（见 [complexity.md](complexity.md)）
 - NOTE：拓扑排序与通常意义上的排序（sorting）不同
+
+### 配套代码
+
+- [../toposort.c](../toposort.c)：`topoSort()`——DFS，每个顶点完成时前插到 `order[]`；遇到指向 Grey 顶点的边则判定有环、返回 -1

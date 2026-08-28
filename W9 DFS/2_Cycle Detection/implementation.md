@@ -16,3 +16,7 @@
   ```
 - 最坏情况运行时间：Θ(n + m)（与 DFS 本身相同，见 [DFS complexity.md](../1_DFS/complexity.md)；该检查只是在已有的邻居遍历中多做一次颜色比较，不改变渐进复杂度）
 - NOTE：源材料只给出了检测环存在性的论证（ancestor/back edge 的关系）以及"寻找指向 Grey 顶点的边"这一识别方法，并未给出独立于 DFSVisit 之外的完整伪代码；这里呈现的是在 DFSVisit 原有邻居遍历基础上的最小改动
+
+### 配套代码
+
+- [../cycle.c](../cycle.c)：`hasCycle()`——DFS 遍历中遇到指向 Grey 顶点的边即判定有环（针对有向图）

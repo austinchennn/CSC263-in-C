@@ -11,3 +11,7 @@
   4. 将第 3 步得到的 depth-first forest 中，每一棵树的顶点集合输出为一个独立的 strongly connected component
   ```
 - 最坏情况运行时间：Θ(n + m)（见 [complexity.md](complexity.md)）
+
+### 配套代码
+
+- [../scc.c](../scc.c)：`sccCount()`——第 1 趟 `dfsRun` 求完成时间，`transposeGraph` 得 G^T，第 2 趟按完成时间递减在 G^T 上 DFS；回填 `comp[]`，返回分量数

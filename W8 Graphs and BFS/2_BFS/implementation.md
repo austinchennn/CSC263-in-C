@@ -35,3 +35,9 @@
      所有边总计 → Θ(m)
 - 总运行时间：Θ(n + m)
 - NOTE：|V| = n，|E| = m
+
+### 配套代码
+
+- [../bfs.h](../bfs.h) / [../bfs.c](../bfs.c)：`bfs()` 用颜色数组 + 定长数组队列，回填 `dist[]` / `pred[]`；`printPath()` 沿 `pred` 回溯打印最短路径
+- [../main.c](../main.c)：用 CLRS 无向图跑一遍，输出各顶点距离与路径
+- 编译：`cc graph.c bfs.c main.c -o demo`

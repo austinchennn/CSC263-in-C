@@ -19,3 +19,7 @@
 - L[i] 对应顶点 vi，存储一个列表 Ai，包含所有从 vi 出发有边相连的顶点
   - 即 Ai 包含 vj 当且仅当 (vi, vj) ∈ E
 - NOTE：对于无向图，一条边 (u, v) 会被存储两次（分别出现在 u 和 v 各自的邻接表中）
+
+### 配套代码
+
+- 邻接表实现：[../graph.h](../graph.h) / [../graph.c](../graph.c)（`createGraph` / `addEdge` / `printGraph`）
