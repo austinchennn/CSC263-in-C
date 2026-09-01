@@ -1,5 +1,5 @@
-#include "../1_DFS/Adjacency List Implementation/graph.h"
-#include "../1_DFS/Adjacency List Implementation/dfs.h"
+#include "../1_DFS/DFS with Timestamps/graph.h"
+#include "../1_DFS/DFS with Timestamps/dfs.h"
 #include <stdio.h>
 
 /*

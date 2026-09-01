@@ -38,5 +38,12 @@
 
 ### 配套代码
 
-- [Adjacency List Implementation/](Adjacency%20List%20Implementation/)：`graph.h` / `graph.c`（邻接表 + `transposeGraph`）、`dfs.h` / `dfs.c`（`dfsRun()` 回填 `d[]` / `f[]` / `pred[]`）、`main.c` 演示。编译命令见该目录 `README.md`
-- 环检测 / 拓扑排序 / SCC 分别在 [../2_Cycle Detection/](../2_Cycle%20Detection/) / [../3_Topological Sort/](../3_Topological%20Sort/) / [../4_Strongly Connected Components/](../4_Strongly%20Connected%20Components/)，它们 `#include` 本目录的 `dfs.h`
+极简教学版（只做遍历，`EdgeNode` / 全局 `visited[]`，无 `Graph` 结构体）：
+
+- [Adjacency List Implementation/](Adjacency%20List%20Implementation/)：`dfs.c` + `dfs_unconnected.c`。单次 Θ(deg(u))，全程 Θ(n + m)
+- [Adjacency Matrix Implementation/](Adjacency%20Matrix%20Implementation/)：`dfs.c` + `dfs_unconnected.c`。找邻居要扫整行 → 全程 Θ(n²)
+
+完整版（`Graph` 结构体 + 三色 + `d[]` / `f[]` 时间戳 + `transposeGraph`）：
+
+- [DFS with Timestamps/](DFS%20with%20Timestamps/)：`graph.h` / `graph.c` / `dfs.h` / `dfs.c` / `main.c`。整体 Θ(n + m)
+- 环检测 / 拓扑排序 / SCC 分别在 [../2_Cycle Detection/](../2_Cycle%20Detection/) / [../3_Topological Sort/](../3_Topological%20Sort/) / [../4_Strongly Connected Components/](../4_Strongly%20Connected%20Components/)，它们 `#include` `DFS with Timestamps/` 的 `dfs.h`

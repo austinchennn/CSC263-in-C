@@ -22,4 +22,10 @@
 
 ### 配套代码
 
-- [Adjacency List Implementation/](Adjacency%20List%20Implementation/)：`graph.h` / `graph.c`（`createGraph` / `addEdge` / `printGraph`）+ `main.c` 演示，编译命令见该目录 `README.md`
+两种表示各一份，API 一样（`createGraph` / `addEdge` / `freeGraph` / `printGraph`），
+用同一张图，方便对比：
+
+- [1.1_Adjacency Matrix/](1.1_Adjacency%20Matrix/)：`int **adj` 是 n×n 的 0/1 矩阵。空间 Θ(n²)，Edge Query Θ(1)，列邻居 Θ(n)
+- [1.2_Adjacency List/](1.2_Adjacency%20List/)：每个顶点挂一条链表。空间 Θ(n + m)，列邻居 O(度数)
+
+编译命令见各目录 `README.md`。
