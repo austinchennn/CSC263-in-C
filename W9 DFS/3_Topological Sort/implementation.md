@@ -15,4 +15,5 @@
 
 ### 配套代码
 
-- [../toposort.c](../toposort.c)：`topoSort()`——DFS，每个顶点完成时前插到 `order[]`；遇到指向 Grey 顶点的边则判定有环、返回 -1
+- [toposort.c](toposort.c)：`topoSort()`——DFS，每个顶点完成时前插到 `order[]`；遇到指向 Grey 顶点的边则判定有环、返回 -1
+- [main.c](main.c)：一张 DAG + 一张有环图各跑一遍。依赖 `../1_DFS/Adjacency List Implementation/` 的 `graph.*` / `dfs.h`，编译命令见 [README.md](README.md)

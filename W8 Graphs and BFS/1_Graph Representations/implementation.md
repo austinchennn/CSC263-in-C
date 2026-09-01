@@ -22,4 +22,4 @@
 
 ### 配套代码
 
-- 邻接表实现：[../graph.h](../graph.h) / [../graph.c](../graph.c)（`createGraph` / `addEdge` / `printGraph`）
+- [Adjacency List Implementation/](Adjacency%20List%20Implementation/)：`graph.h` / `graph.c`（`createGraph` / `addEdge` / `printGraph`）+ `main.c` 演示，编译命令见该目录 `README.md`

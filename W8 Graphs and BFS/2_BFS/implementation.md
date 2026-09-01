@@ -38,6 +38,8 @@
 
 ### 配套代码
 
-- [../bfs.h](../bfs.h) / [../bfs.c](../bfs.c)：`bfs()` 用颜色数组 + 定长数组队列，回填 `dist[]` / `pred[]`；`printPath()` 沿 `pred` 回溯打印最短路径
-- [../main.c](../main.c)：用 CLRS 无向图跑一遍，输出各顶点距离与路径
-- 编译：`cc graph.c bfs.c main.c -o demo`
+本目录自包含（`graph.h` / `graph.c` 是 [1_Graph Representations](../1_Graph%20Representations/) 的副本）：
+
+- [bfs.h](bfs.h) / [bfs.c](bfs.c)：`bfs()` 用颜色数组 + 定长数组队列，回填 `dist[]` / `pred[]`；`printPath()` 沿 `pred` 回溯打印最短路径
+- [main.c](main.c)：用 CLRS 无向图跑一遍，输出各顶点距离与路径
+- 编译运行：`cc -Wall -Wextra graph.c bfs.c main.c -o demo && ./demo`（另见 [README.md](README.md)）

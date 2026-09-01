@@ -38,7 +38,5 @@
 
 ### 配套代码
 
-- [../graph.h](../graph.h) / [../graph.c](../graph.c)：邻接表 + `transposeGraph`（SCC 用）
-- [../dfs.h](../dfs.h) / [../dfs.c](../dfs.c)：`dfsRun()` 递归实现 DFS(G) / DFSVisit，回填 `d[]` / `f[]` / `pred[]`
-- 环检测 / 拓扑排序 / SCC 分别在 [../cycle.c](../cycle.c) / [../toposort.c](../toposort.c) / [../scc.c](../scc.c)
-- 编译：`cc graph.c dfs.c cycle.c toposort.c scc.c main.c -o demo`
+- [Adjacency List Implementation/](Adjacency%20List%20Implementation/)：`graph.h` / `graph.c`（邻接表 + `transposeGraph`）、`dfs.h` / `dfs.c`（`dfsRun()` 回填 `d[]` / `f[]` / `pred[]`）、`main.c` 演示。编译命令见该目录 `README.md`
+- 环检测 / 拓扑排序 / SCC 分别在 [../2_Cycle Detection/](../2_Cycle%20Detection/) / [../3_Topological Sort/](../3_Topological%20Sort/) / [../4_Strongly Connected Components/](../4_Strongly%20Connected%20Components/)，它们 `#include` 本目录的 `dfs.h`
